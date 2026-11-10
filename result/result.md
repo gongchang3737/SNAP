@@ -1,8 +1,8 @@
 # SNAP 当前实验结果说明
 
-最后更新：2026-10-18
+最后更新：2026-11-10
 
-本文档汇总当前 `result/` 下可审计的正式结果、覆盖范围和结论边界。正式实验范围为 BA、WS、ER 三类合成网络，以及 WDN_Net1/2/3、IEEE_14/30/57/118Bus 七个真实网络；GEO 已从数据和正式实验中删除，目录中残留的GEO历史JSON不得纳入统计。
+本文档汇总当前 `result/` 下最终论文使用的结果、覆盖范围和结论边界。正式实验范围为 BA、WS、ER 三类合成网络，以及 WDN_Net1/2/3、IEEE_14/30/57/118Bus 七个真实网络。旧版本结果目录已从公开仓库删除；`baselines/` 中保留的 GEO 历史记录不属于正式统计范围。
 
 ## 1. 数据和结果有效性
 
@@ -29,20 +29,23 @@ PASS: all checked files share one canonical node-index order.
 |---|---|---|---|
 | 五种baseline，no-SD | 完成 | 完成 | 完成 |
 | 五种baseline，SD | 完成 | 完成 | 完成 |
-| v3 one-shot/旧SGBS，no-SD | 完成 | 完成 | 完成 |
-| v3 one-shot/历史SD-SGBS | 完成 | 完成 | 完成 |
-| 新版hop-SGBS | 完成 | 完成 | 完成 |
-| 新版mc-SGBS | 完成 | 完成 | 完成 |
-| 新版pMC-SGBS | 完成 | 完成 | 完成 |
+| v3直接推理，no-SD | 完成 | 完成 | 完成 |
+| v3直接推理，SD | 完成 | 完成 | 完成 |
+| hop-SGBS | 完成 | 完成 | 完成 |
+| mc-SGBS | 完成 | 完成 | 完成 |
+| pMC-SGBS | 完成 | 完成 | 完成 |
 | f0/f1/f2/f3特征消融 | 完成（no-SD one-shot） | 完成 | 不适用 |
 
-新版三方对照的正式目录：
+最终论文结果目录：
 
-- hop/mc：`result/formal_sd_20261008_r1/synthetic_20_50_100/`；该目录同时含全部合成网络hop/mc和真实网络hop/mc；
-- pMC：`result/pmc_sgbs_20_100/`；包含全部合成网络和七个真实网络；
-- baseline：`result/baselines/baselines_summary.csv`。
+- `result/baselines/`：五种非神经网络baseline及统一汇总；
+- `result/hop_sgbs/`：hop-SGBS结果；
+- `result/mc_sgbs/`：mc-SGBS结果；
+- `result/pmc_sgbs/`：pMC-SGBS结果；
+- `result/ppo_mix_v3_no_sd/`、`result/ppo_mix_v3_sd/`：v3直接推理结果；
+- `result/ppo_ablation_f0_no_sd/`、`result/ppo_ablation_f1_no_sd/`、`result/ppo_ablation_f2_no_sd/`：特征消融结果。
 
-旧 `result/ppo_mix_v3_sd/` 中的SGBS文件没有新版 `sd_score_mode`、场景池指纹和完整计时语义，不纳入新版hop/mc/pMC正式对照。
+除上述目录外的旧模型、调试批次和中间版本结果均未纳入公开仓库。
 
 ## 3. 20/50/100节点：hop、mc与pMC
 
@@ -61,7 +64,7 @@ PASS: all checked files share one canonical node-index order.
 | WS-100 | 1.5681 | 1.4241 | 1.4107 | +10.04% | +0.94% |
 | **9场景宏平均** | **2.8440** | **2.7953** | **2.7561** | **+3.09%** | **+1.40%** |
 
-pMC相对mc在9/9场景rank更低；相对hop在8/9场景更低，仅ER-20略差。收益主要来自50/100节点，尤其WS-100。这个结果支持“条件档位信息在当前小中规模合成图上有帮助”，但只有一个训练seed，不能外推为所有图和所有搜索参数下必然成立。
+pMC相对mc在9/9场景rank更低；相对hop在8/9场景更低，仅ER-20略差。收益主要来自50/100节点，尤其WS-100。这个结果支持“条件档位信息在当前小中规模合成图上有帮助”，但目前只有单次训练初始化，不能外推为所有图和所有搜索参数下必然成立。
 
 ### 3.1 按最终SD档位
 
@@ -201,7 +204,7 @@ mc相对hop按场景平均改善7.14%，pMC相对hop改善8.49%，pMC相对mc改
 
 ## 6. no-SD与特征消融
 
-no-SD、历史SD模型结果以及五种baseline均已保留。当前文档重点更新独立场景SGBS，因此不把旧SGBS字段不完整的结果与新版三方对照混合。论文若引用no-SD主表，应直接从最新 `baselines_summary.csv` 和对应v3 JSON重新导出，确保使用重建后的真实网络数据。
+no-SD与SD的v3直接推理结果、五种baseline以及f0/f1/f2特征消融结果均已保留。论文若引用no-SD主表，应直接从最新 `baselines_summary.csv` 和对应v3 JSON重新导出，确保使用重建后的真实网络数据。
 
 no-SD one-shot特征消融的现有汇总如下：
 
@@ -212,7 +215,7 @@ no-SD one-shot特征消融的现有汇总如下：
 | f2 | 1.5903 | 0/18 | -48.55% |
 | f3 | 0.9553 | 6/18 | -0.98% |
 
-f3整体最好，但特征收益不单调：f2弱于f1，加入全局density和diameter ratio后f3才恢复。全部模型只使用训练seed 42，因此该消融是单种子证据。
+f3整体最好，但特征收益不单调：f2弱于f1，加入全局density和diameter ratio后f3才恢复。全部模型仅来自单次训练初始化，因此该消融仍属于单次训练证据。
 
 ## 7. 当前可支持的初步结论
 
@@ -225,16 +228,16 @@ f3整体最好，但特征收益不单调：f2弱于f1，加入全局density和d
 7. **条件先验带来的收益稳定但幅度有限。** pMC相对mc在全部18个合成场景平均改善1.47%，其价值需要结合已知SD档位这一额外假设说明。
 8. **搜索质量与时间必须同时报告。** 大图mc约为hop的2.46倍；pMC `all` 是三次条件部署的离线评价成本，约为hop的6.07倍。现实单档部署应使用单档时间。
 9. **真实网络仍不能宣称普遍优势。** 合成网络结果完整且一致，但七个真实网络中hop、mc、pMC没有稳定赢家，真实网络结论必须逐网络呈现。
-10. **结论仍受单训练seed限制。** 当前设计按用户决定只使用seed 42，论文必须明确这一限制。
+10. **结论仍受单次训练限制。** 当前结果来自单次训练初始化，论文必须明确这一限制。
 
 ## 8. 结果文件与维护规则
 
 - `result/baselines/baselines_summary.csv`：五种baseline的统一表；
-- `result/ppo_mix_v3_no_sd/`：no-SD v3结果；
-- `result/ppo_mix_v3_sd/`：SD v3历史one-shot/SGBS结果；
-- `result/formal_sd_20261008_r1/synthetic_20_50_100/`：新版hop/mc结果；
-- `result/pmc_sgbs_20_100/`：pMC结果；
-- `result/ppo_ablation_f0_no_sd/`、`f1`、`f2`及 `ppo_mix_v3_no_sd/`：特征消融；
-- `SD_SCENARIO_PROGRESS.md`：mc/pMC实现、隔离验证和运行状态。
+- `result/hop_sgbs/`：hop-SGBS正式结果；
+- `result/mc_sgbs/`：mc-SGBS正式结果；
+- `result/pmc_sgbs/`：pMC-SGBS正式结果；
+- `result/ppo_mix_v3_no_sd/`：no-SD v3直接推理结果及f3消融对照；
+- `result/ppo_mix_v3_sd/`：SD v3直接推理结果；
+- `result/ppo_ablation_f0_no_sd/`、`result/ppo_ablation_f1_no_sd/`、`result/ppo_ablation_f2_no_sd/`：f0/f1/f2消融结果。
 
-更新结果时必须同时记录checkpoint、数据标识、评分模式、先验、场景数、`beta/gamma`、预算和计时语义。不要根据文件夹名猜配置，应以JSON `run_config` 为准；不要把GEO历史文件、重建前真实网络文件或缺少新版评分标识的旧SGBS文件混入当前表格。
+更新结果时必须同时记录checkpoint、数据标识、评分模式、先验、场景数、`beta/gamma`、预算和计时语义。不要根据文件夹名猜配置，应以JSON `run_config` 为准；不要把GEO历史文件或重建前真实网络文件混入当前表格。

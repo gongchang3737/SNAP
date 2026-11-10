@@ -256,27 +256,27 @@ python run_experiment.py train --model-id ppo_mix_v3_no_sd_f0 --model-method PPO
 每类取2张20节点图，`k=3`，仅用于检查流程：
 
 ```powershell
-& python run_experiment.py test --model-id ppo_mix_v3_sd --model-method PPOAgent --graph-types BA,WS,ER --test-sizes 20 --num-graphs 2 --fixed-k 3 --beta 4 --gamma 4 --no-sd False --no-baselines --neural-methods one_shot --seed 42 --feature-set f3 --sd-score-mode hop --results-dir result/sd_sgbs_stage4 --result-tag one_shot_seed42
+& python run_experiment.py test --model-id ppo_mix_v3_sd --model-method PPOAgent --graph-types BA,WS,ER --test-sizes 20 --num-graphs 2 --fixed-k 3 --beta 4 --gamma 4 --no-sd False --no-baselines --neural-methods one_shot --seed 42 --feature-set f3 --sd-score-mode hop --results-dir result/ppo_mix_v3_sd --result-tag one_shot
 
-& python run_experiment.py test --model-id ppo_mix_v3_sd --model-method PPOAgent --graph-types BA,WS,ER --test-sizes 20 --num-graphs 2 --fixed-k 3 --beta 4 --gamma 4 --no-sd False --no-baselines --neural-methods SGBS --seed 42 --feature-set f3 --sd-score-mode hop --results-dir result/sd_sgbs_stage4 --result-tag hop_beta4_gamma4_seed42
+& python run_experiment.py test --model-id ppo_mix_v3_sd --model-method PPOAgent --graph-types BA,WS,ER --test-sizes 20 --num-graphs 2 --fixed-k 3 --beta 4 --gamma 4 --no-sd False --no-baselines --neural-methods SGBS --seed 42 --feature-set f3 --sd-score-mode hop --results-dir result/hop_sgbs --result-tag hop_beta4_gamma4
 
-& python run_experiment.py test --model-id ppo_mix_v3_sd --model-method PPOAgent --graph-types BA,WS,ER --test-sizes 20 --num-graphs 2 --fixed-k 3 --beta 4 --gamma 4 --no-sd False --no-baselines --neural-methods SGBS --seed 42 --feature-set f3 --sd-score-mode mc --search-scenarios 12 --search-seed 42001 --sd-prior equal_lmh --delay-mu 1.0 --results-dir result/sd_sgbs_stage4 --result-tag mc_beta4_gamma4_M12_seed42001
+& python run_experiment.py test --model-id ppo_mix_v3_sd --model-method PPOAgent --graph-types BA,WS,ER --test-sizes 20 --num-graphs 2 --fixed-k 3 --beta 4 --gamma 4 --no-sd False --no-baselines --neural-methods SGBS --seed 42 --feature-set f3 --sd-score-mode mc --search-scenarios 12 --search-seed 42001 --sd-prior equal_lmh --delay-mu 1.0 --results-dir result/mc_sgbs --result-tag mc_beta4_gamma4_M12
 ```
 
 旧no-SD路径仍可使用同一checkpoint做兼容性检查；`mc`只允许SD模式：
 
 ```powershell
-& python run_experiment.py test --model-id ppo_mix_v3_sd --model-method PPOAgent --graph-types BA --test-sizes 20 --num-graphs 1 --fixed-k 3 --beta 4 --gamma 4 --no-sd True --no-baselines --neural-methods one_shot,SGBS --seed 42 --feature-set f3 --sd-score-mode hop --results-dir result/no_sd_compat --result-tag one_shot_and_hop_seed42
+& python run_experiment.py test --model-id ppo_mix_v3_sd --model-method PPOAgent --graph-types BA --test-sizes 20 --num-graphs 1 --fixed-k 3 --beta 4 --gamma 4 --no-sd True --no-baselines --neural-methods one_shot,SGBS --seed 42 --feature-set f3 --sd-score-mode hop --results-dir result/ppo_mix_v3_no_sd --result-tag one_shot_and_hop
 ```
 
 ### 12.2 BA/WS/ER：20、50、100节点
 
 ```powershell
-& python run_experiment.py test --model-id ppo_mix_v3_sd --model-method PPOAgent --graph-types BA,WS,ER --test-sizes 20,50,100 --num-graphs 100 --beta 4 --gamma 4 --no-sd False --no-baselines --neural-methods one_shot --seed 42 --feature-set f3 --sd-score-mode hop --results-dir result/sd_sgbs_20_100 --result-tag one_shot_seed42
+& python run_experiment.py test --model-id ppo_mix_v3_sd --model-method PPOAgent --graph-types BA,WS,ER --test-sizes 20,50,100 --num-graphs 100 --beta 4 --gamma 4 --no-sd False --no-baselines --neural-methods one_shot --seed 42 --feature-set f3 --sd-score-mode hop --results-dir result/ppo_mix_v3_sd --result-tag one_shot
 
-& python run_experiment.py test --model-id ppo_mix_v3_sd --model-method PPOAgent --graph-types BA,WS,ER --test-sizes 20,50,100 --num-graphs 100 --beta 4 --gamma 4 --no-sd False --no-baselines --neural-methods SGBS --seed 42 --feature-set f3 --sd-score-mode hop --results-dir result/sd_sgbs_20_100 --result-tag hop_beta4_gamma4_seed42
+& python run_experiment.py test --model-id ppo_mix_v3_sd --model-method PPOAgent --graph-types BA,WS,ER --test-sizes 20,50,100 --num-graphs 100 --beta 4 --gamma 4 --no-sd False --no-baselines --neural-methods SGBS --seed 42 --feature-set f3 --sd-score-mode hop --results-dir result/hop_sgbs --result-tag hop_beta4_gamma4
 
-& python run_experiment.py test --model-id ppo_mix_v3_sd --model-method PPOAgent --graph-types BA,WS,ER --test-sizes 20,50,100 --num-graphs 100 --beta 4 --gamma 4 --no-sd False --no-baselines --neural-methods SGBS --seed 42 --feature-set f3 --sd-score-mode mc --search-scenarios 12 --search-seed 42001 --sd-prior equal_lmh --delay-mu 1.0 --results-dir result/sd_sgbs_20_100 --result-tag mc_beta4_gamma4_M12_seed42001
+& python run_experiment.py test --model-id ppo_mix_v3_sd --model-method PPOAgent --graph-types BA,WS,ER --test-sizes 20,50,100 --num-graphs 100 --beta 4 --gamma 4 --no-sd False --no-baselines --neural-methods SGBS --seed 42 --feature-set f3 --sd-score-mode mc --search-scenarios 12 --search-seed 42001 --sd-prior equal_lmh --delay-mu 1.0 --results-dir result/mc_sgbs --result-tag mc_beta4_gamma4_M12
 ```
 
 ### 12.3 BA/WS/ER：200、300、500节点
@@ -289,11 +289,11 @@ $cases | ForEach-Object {
     $size = $_[0]
     $searchGamma = $_[1]
 
-    & python run_experiment.py test --model-id ppo_mix_v3_sd --model-method PPOAgent --graph-types BA,WS,ER --test-sizes $size --num-graphs 100 --beta 2 --gamma $searchGamma --no-sd False --no-baselines --neural-methods one_shot --seed 42 --feature-set f3 --sd-score-mode hop --results-dir result/sd_sgbs_200_500 --result-tag "one_shot_${size}_seed42"
+    & python run_experiment.py test --model-id ppo_mix_v3_sd --model-method PPOAgent --graph-types BA,WS,ER --test-sizes $size --num-graphs 100 --beta 2 --gamma $searchGamma --no-sd False --no-baselines --neural-methods one_shot --seed 42 --feature-set f3 --sd-score-mode hop --results-dir result/ppo_mix_v3_sd --result-tag "one_shot_${size}"
 
-    & python run_experiment.py test --model-id ppo_mix_v3_sd --model-method PPOAgent --graph-types BA,WS,ER --test-sizes $size --num-graphs 100 --beta 2 --gamma $searchGamma --no-sd False --no-baselines --neural-methods SGBS --seed 42 --feature-set f3 --sd-score-mode hop --results-dir result/sd_sgbs_200_500 --result-tag "hop_${size}_beta2_gamma${searchGamma}_seed42"
+    & python run_experiment.py test --model-id ppo_mix_v3_sd --model-method PPOAgent --graph-types BA,WS,ER --test-sizes $size --num-graphs 100 --beta 2 --gamma $searchGamma --no-sd False --no-baselines --neural-methods SGBS --seed 42 --feature-set f3 --sd-score-mode hop --results-dir result/hop_sgbs --result-tag "hop_${size}_beta2_gamma${searchGamma}"
 
-    & python run_experiment.py test --model-id ppo_mix_v3_sd --model-method PPOAgent --graph-types BA,WS,ER --test-sizes $size --num-graphs 100 --beta 2 --gamma $searchGamma --no-sd False --no-baselines --neural-methods SGBS --seed 42 --feature-set f3 --sd-score-mode mc --search-scenarios 12 --search-seed 42001 --sd-prior equal_lmh --delay-mu 1.0 --results-dir result/sd_sgbs_200_500 --result-tag "mc_${size}_beta2_gamma${searchGamma}_M12_seed42001"
+    & python run_experiment.py test --model-id ppo_mix_v3_sd --model-method PPOAgent --graph-types BA,WS,ER --test-sizes $size --num-graphs 100 --beta 2 --gamma $searchGamma --no-sd False --no-baselines --neural-methods SGBS --seed 42 --feature-set f3 --sd-score-mode mc --search-scenarios 12 --search-seed 42001 --sd-prior equal_lmh --delay-mu 1.0 --results-dir result/mc_sgbs --result-tag "mc_${size}_beta2_gamma${searchGamma}_M12"
 }
 ```
 
@@ -301,10 +301,10 @@ $cases | ForEach-Object {
 
 ### 12.4 pMC-SGBS条件先验评价
 
-下面的命令复用同一个 `ppo_mix_v3_sd` checkpoint。每张拓扑分别按三个互斥条件先验生成三套部署方案，每档使用12个独立模拟场景；最终测试实现只与相同档位的方案匹配。结果单独保存在 `result/pmc_sgbs_20_100`，不会覆盖hop或mc结果：
+下面的命令复用同一个 `ppo_mix_v3_sd` checkpoint。每张拓扑分别按三个互斥条件先验生成三套部署方案，每档使用12个独立模拟场景；最终测试实现只与相同档位的方案匹配。结果单独保存在 `result/pmc_sgbs`，不会覆盖hop或mc结果：
 
 ```powershell
-& python run_experiment.py test --model-id ppo_mix_v3_sd --model-method PPOAgent --graph-types BA,WS,ER --test-sizes 20,50,100 --num-graphs 100 --beta 4 --gamma 4 --no-sd False --no-baselines --neural-methods SGBS --seed 42 --feature-set f3 --sd-score-mode pmc --known-sd-level all --search-scenarios 12 --search-seed 42001 --delay-mu 1.0 --results-dir result/pmc_sgbs_20_100 --result-tag pmc_all_beta4_gamma4_M12_searchseed42001
+& python run_experiment.py test --model-id ppo_mix_v3_sd --model-method PPOAgent --graph-types BA,WS,ER --test-sizes 20,50,100 --num-graphs 100 --beta 4 --gamma 4 --no-sd False --no-baselines --neural-methods SGBS --seed 42 --feature-set f3 --sd-score-mode pmc --known-sd-level all --search-scenarios 12 --search-seed 42001 --delay-mu 1.0 --results-dir result/pmc_sgbs --result-tag pmc_all_beta4_gamma4_M12
 ```
 
 如只验证一个已知档位，可将 `all` 改为 `low`、`medium` 或 `high`。此时结果仅包含该档位最终实现的评价。JSON中的通用 `ave_deployment_time` 表示一次已知档位部署的平均时间；`ave_conditional_total_deployment_time` 表示为了完成 `all` 三档论文实验而依次执行三套部署的总时间。
@@ -331,7 +331,7 @@ python summarize_baselines.py
 & python validate_graph_data.py --graph-types WDN_Net1,WDN_Net2,WDN_Net3,IEEE_14Bus,IEEE_30Bus,IEEE_57Bus,IEEE_118Bus
 ```
 
-只有检查成功后才运行下列评价。每个case内hop与mc严格复用同一 `beta/gamma`。下列命令给出推荐的质量—时间配置：IEEE-118使用 `(2,16)`，其余网络使用 `(4,4)`。需要注意，`result/formal_sd_20261008_r1` 和 `result/pmc_sgbs_20_100` 中现存的真实网络三方对照实际全部使用 `(4,4)`；该批结果不能标记为IEEE-118 `(2,16)`：
+只有检查成功后才运行下列评价。每个case内hop与mc严格复用同一 `beta/gamma`。下列命令给出推荐的质量—时间配置：IEEE-118使用 `(2,16)`，其余网络使用 `(4,4)`。需要注意，`result/hop_sgbs`、`result/mc_sgbs` 和 `result/pmc_sgbs` 中现存的真实网络三方对照实际全部使用 `(4,4)`；该批结果不能标记为IEEE-118 `(2,16)`：
 
 ```powershell
 $cases = @(
@@ -346,11 +346,11 @@ $cases | ForEach-Object {
     $searchBeta = $_[2]
     $searchGamma = $_[3]
 
-    & python run_experiment.py test --model-id ppo_mix_v3_sd --model-method PPOAgent --graph-types $graphType --test-sizes $size --num-graphs 1 --beta $searchBeta --gamma $searchGamma --no-sd False --no-baselines --neural-methods one_shot --seed 42 --feature-set f3 --sd-score-mode hop --results-dir result/sd_sgbs_real --result-tag "one_shot_${graphType}_seed42"
+    & python run_experiment.py test --model-id ppo_mix_v3_sd --model-method PPOAgent --graph-types $graphType --test-sizes $size --num-graphs 1 --beta $searchBeta --gamma $searchGamma --no-sd False --no-baselines --neural-methods one_shot --seed 42 --feature-set f3 --sd-score-mode hop --results-dir result/ppo_mix_v3_sd --result-tag "one_shot_${graphType}"
 
-    & python run_experiment.py test --model-id ppo_mix_v3_sd --model-method PPOAgent --graph-types $graphType --test-sizes $size --num-graphs 1 --beta $searchBeta --gamma $searchGamma --no-sd False --no-baselines --neural-methods SGBS --seed 42 --feature-set f3 --sd-score-mode hop --results-dir result/sd_sgbs_real --result-tag "hop_${graphType}_beta${searchBeta}_gamma${searchGamma}_seed42"
+    & python run_experiment.py test --model-id ppo_mix_v3_sd --model-method PPOAgent --graph-types $graphType --test-sizes $size --num-graphs 1 --beta $searchBeta --gamma $searchGamma --no-sd False --no-baselines --neural-methods SGBS --seed 42 --feature-set f3 --sd-score-mode hop --results-dir result/hop_sgbs --result-tag "hop_${graphType}_beta${searchBeta}_gamma${searchGamma}"
 
-    & python run_experiment.py test --model-id ppo_mix_v3_sd --model-method PPOAgent --graph-types $graphType --test-sizes $size --num-graphs 1 --beta $searchBeta --gamma $searchGamma --no-sd False --no-baselines --neural-methods SGBS --seed 42 --feature-set f3 --sd-score-mode mc --search-scenarios 12 --search-seed 42001 --sd-prior equal_lmh --delay-mu 1.0 --results-dir result/sd_sgbs_real --result-tag "mc_${graphType}_beta${searchBeta}_gamma${searchGamma}_M12_seed42001"
+    & python run_experiment.py test --model-id ppo_mix_v3_sd --model-method PPOAgent --graph-types $graphType --test-sizes $size --num-graphs 1 --beta $searchBeta --gamma $searchGamma --no-sd False --no-baselines --neural-methods SGBS --seed 42 --feature-set f3 --sd-score-mode mc --search-scenarios 12 --search-seed 42001 --sd-prior equal_lmh --delay-mu 1.0 --results-dir result/mc_sgbs --result-tag "mc_${graphType}_beta${searchBeta}_gamma${searchGamma}_M12"
 }
 ```
 
@@ -373,11 +373,10 @@ python sweep_sgbs_tradeoff.py --help
 ## 15. 结果目录和主要字段
 
 - `model_save/<model_id>/`：checkpoint、训练 return、loss 和配置记录；
-- `result/<model_id>/`：PPO 的 JSON 测试结果及汇总文件；
+- `result/ppo_mix_v3_no_sd/`、`result/ppo_mix_v3_sd/`：PPO v3直接推理结果；
 - `result/baselines/`：非神经 baseline 的 JSON 与 `baselines_summary.csv`；
-- `result/ablation/` 或以消融模型 ID 命名的目录：特征消融结果；
-- `result/formal_sd_20261008_r1/synthetic_20_50_100/`：当前新版hop/mc结果；其中20/50/100三方结果完整，大图只有hop完整；
-- `result/pmc_sgbs_20_100/`：当前pMC结果；20/50/100及七个真实网络完整，大图尚未运行；
+- `result/ppo_ablation_f0_no_sd/`、`result/ppo_ablation_f1_no_sd/`、`result/ppo_ablation_f2_no_sd/`：特征消融结果；
+- `result/hop_sgbs/`、`result/mc_sgbs/`、`result/pmc_sgbs/`：hop、mc与pMC正式对照结果，覆盖20至500节点合成网络及七个真实网络；
 - 参数扫描结果由 `sweep_sgbs_tradeoff.py` 的输出参数决定。
 
 常见结果字段包括图类型、节点数、传感器预算、方法名、平均 rank、rank 标准差、平均时间、时间标准差、是否使用 SD、延迟实现数量、`beta` 和 `gamma`。其中：
@@ -420,10 +419,10 @@ SGBS和最终排名的统一索引，以及独立场景复现、随机流隔离�
 
 ## 18. 当前结果状态（2026-10-10）
 
-- 五种baseline的no-SD与SD结果已覆盖BA、WS、ER六种规模及七个重建后的真实网络；统一表位于 `result/baselines/baselines_summary.csv`。目录中残留的GEO历史JSON不属于当前实验范围。
+- 五种baseline的no-SD与SD结果已覆盖BA、WS、ER六种规模及七个重建后的真实网络；统一表位于 `result/baselines/baselines_summary.csv`。`baselines/` 中保留的GEO历史JSON不属于当前实验范围。
 - 新版hop/mc/pMC三方对照在BA、WS、ER的20/50/100节点上完整；pMC总体平均rank为2.7561，hop为2.8440，mc为2.7953。
 - 七个真实网络的hop/mc/pMC结果完整，但只有一张拓扑/网络，且当前三种模式都按 `(beta=4,gamma=4)` 运行。三者的宏平均rank分别为1.2692、1.2920、1.2879，不能据此声称条件先验在真实网络上稳定占优。
-- 200/300/500节点当前仅新版hop结果齐全；新版mc与pMC尚未形成同口径完整结果。旧 `result/ppo_mix_v3_sd` 中的SGBS结果缺少新评分模式的完整审计字段，不能替代新版三方对照。
+- 200/300/500节点的hop、mc与pMC结果均已完整，正式三方对照分别位于 `result/hop_sgbs`、`result/mc_sgbs` 和 `result/pmc_sgbs`。
 - 节点索引回归、独立场景隔离和pMC功能测试为32/32通过；七个真实网络测试数据的7张拓扑和210个延迟实现也已通过只读一致性审计。
 
 完整数值、分档结果、时间口径和论文表述限制见 [result/result.md](result/result.md)；推理侧实现过程与待办见 [SD_SCENARIO_PROGRESS.md](SD_SCENARIO_PROGRESS.md)。
