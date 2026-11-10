@@ -1,0 +1,41 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyd
+.pytest_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+
+# Virtual environments and local configuration
+.venv/
+venv/
+env/
+.env
+.env.*
+!.env.example
+
+# IDE and operating-system files
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Runtime outputs
+runs/
+logs/
+*.log
+
+# Large local archives and generated checkpoints
+*.rar
+*.7z
+data/**/*.zip
+data/**/*.tar
+data/**/*.tar.gz
+model_save/**/*.pth
+model_save/**/*.ckpt
+
+# Temporary files
+*.tmp
+*.bak
+~$*

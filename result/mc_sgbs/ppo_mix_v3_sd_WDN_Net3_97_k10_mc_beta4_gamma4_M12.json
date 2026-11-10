@@ -1,0 +1,467 @@
+{
+    "PPOAgent": {
+        "SGBS": {
+            "ave_rank": 1.240549828178694,
+            "ave_time": 4.2237439000000006,
+            "rank": [
+                1.240549828178694
+            ],
+            "time": [
+                4.2237439000000006
+            ],
+            "model_load_time": [
+                2.5321586
+            ],
+            "feature_time": [
+                0.015804999999999403
+            ],
+            "search_time": [
+                1.605204500000001
+            ],
+            "search_scenario_generation_time": [
+                0.024729800000000246
+            ],
+            "search_scoring_time": [
+                0.30185019999999874
+            ],
+            "deployment_time": [
+                4.1795028
+            ],
+            "placement_time": [
+                1.6210095000000004
+            ],
+            "evaluation_time": [
+                0.0442411000000007
+            ],
+            "ave_model_load_time": 2.5321586,
+            "ave_feature_time": 0.015804999999999403,
+            "ave_search_time": 1.605204500000001,
+            "ave_search_scenario_generation_time": 0.024729800000000246,
+            "ave_search_scoring_time": 0.30185019999999874,
+            "ave_deployment_time": 4.1795028,
+            "ave_placement_time": 1.6210095000000004,
+            "ave_evaluation_time": 0.0442411000000007,
+            "rank_by_realization": [
+                [
+                    0.7989690721649485,
+                    0.788659793814433,
+                    0.8556701030927835,
+                    0.8814432989690721,
+                    0.7628865979381443,
+                    0.8144329896907216,
+                    0.7577319587628866,
+                    0.8041237113402062,
+                    0.8505154639175257,
+                    0.7835051546391752,
+                    1.0463917525773196,
+                    0.7783505154639175,
+                    1.4123711340206186,
+                    0.8350515463917526,
+                    1.1082474226804124,
+                    0.8092783505154639,
+                    1.0515463917525774,
+                    0.7628865979381443,
+                    0.7989690721649485,
+                    1.2268041237113403,
+                    3.4123711340206184,
+                    1.2371134020618557,
+                    1.675257731958763,
+                    1.4948453608247423,
+                    2.4381443298969074,
+                    1.943298969072165,
+                    1.0721649484536082,
+                    1.4948453608247423,
+                    2.3247422680412373,
+                    2.195876288659794
+                ]
+            ],
+            "realization_records": [
+                {
+                    "graph_index": 0,
+                    "realization_index": 0,
+                    "sd": 0.007293,
+                    "sd_group": "low",
+                    "rank": 0.7989690721649485
+                },
+                {
+                    "graph_index": 0,
+                    "realization_index": 1,
+                    "sd": 0.059148,
+                    "sd_group": "low",
+                    "rank": 0.788659793814433
+                },
+                {
+                    "graph_index": 0,
+                    "realization_index": 2,
+                    "sd": 0.005461,
+                    "sd_group": "low",
+                    "rank": 0.8556701030927835
+                },
+                {
+                    "graph_index": 0,
+                    "realization_index": 3,
+                    "sd": 0.082946,
+                    "sd_group": "low",
+                    "rank": 0.8814432989690721
+                },
+                {
+                    "graph_index": 0,
+                    "realization_index": 4,
+                    "sd": 0.053627,
+                    "sd_group": "low",
+                    "rank": 0.7628865979381443
+                },
+                {
+                    "graph_index": 0,
+                    "realization_index": 5,
+                    "sd": 0.043248,
+                    "sd_group": "low",
+                    "rank": 0.8144329896907216
+                },
+                {
+                    "graph_index": 0,
+                    "realization_index": 6,
+                    "sd": 0.00369,
+                    "sd_group": "low",
+                    "rank": 0.7577319587628866
+                },
+                {
+                    "graph_index": 0,
+                    "realization_index": 7,
+                    "sd": 0.08677,
+                    "sd_group": "low",
+                    "rank": 0.8041237113402062
+                },
+                {
+                    "graph_index": 0,
+                    "realization_index": 8,
+                    "sd": 0.00201,
+                    "sd_group": "low",
+                    "rank": 0.8505154639175257
+                },
+                {
+                    "graph_index": 0,
+                    "realization_index": 9,
+                    "sd": 0.032348,
+                    "sd_group": "low",
+                    "rank": 0.7835051546391752
+                },
+                {
+                    "graph_index": 0,
+                    "realization_index": 10,
+                    "sd": 0.16632,
+                    "sd_group": "medium",
+                    "rank": 1.0463917525773196
+                },
+                {
+                    "graph_index": 0,
+                    "realization_index": 11,
+                    "sd": 0.179106,
+                    "sd_group": "medium",
+                    "rank": 0.7783505154639175
+                },
+                {
+                    "graph_index": 0,
+                    "realization_index": 12,
+                    "sd": 0.216974,
+                    "sd_group": "medium",
+                    "rank": 1.4123711340206186
+                },
+                {
+                    "graph_index": 0,
+                    "realization_index": 13,
+                    "sd": 0.163506,
+                    "sd_group": "medium",
+                    "rank": 0.8350515463917526
+                },
+                {
+                    "graph_index": 0,
+                    "realization_index": 14,
+                    "sd": 0.235873,
+                    "sd_group": "medium",
+                    "rank": 1.1082474226804124
+                },
+                {
+                    "graph_index": 0,
+                    "realization_index": 15,
+                    "sd": 0.16784,
+                    "sd_group": "medium",
+                    "rank": 0.8092783505154639
+                },
+                {
+                    "graph_index": 0,
+                    "realization_index": 16,
+                    "sd": 0.228746,
+                    "sd_group": "medium",
+                    "rank": 1.0515463917525774
+                },
+                {
+                    "graph_index": 0,
+                    "realization_index": 17,
+                    "sd": 0.161171,
+                    "sd_group": "medium",
+                    "rank": 0.7628865979381443
+                },
+                {
+                    "graph_index": 0,
+                    "realization_index": 18,
+                    "sd": 0.179187,
+                    "sd_group": "medium",
+                    "rank": 0.7989690721649485
+                },
+                {
+                    "graph_index": 0,
+                    "realization_index": 19,
+                    "sd": 0.270267,
+                    "sd_group": "medium",
+                    "rank": 1.2268041237113403
+                },
+                {
+                    "graph_index": 0,
+                    "realization_index": 20,
+                    "sd": 0.490235,
+                    "sd_group": "high",
+                    "rank": 3.4123711340206184
+                },
+                {
+                    "graph_index": 0,
+                    "realization_index": 21,
+                    "sd": 0.302108,
+                    "sd_group": "high",
+                    "rank": 1.2371134020618557
+                },
+                {
+                    "graph_index": 0,
+                    "realization_index": 22,
+                    "sd": 0.436986,
+                    "sd_group": "high",
+                    "rank": 1.675257731958763
+                },
+                {
+                    "graph_index": 0,
+                    "realization_index": 23,
+                    "sd": 0.349283,
+                    "sd_group": "high",
+                    "rank": 1.4948453608247423
+                },
+                {
+                    "graph_index": 0,
+                    "realization_index": 24,
+                    "sd": 0.345479,
+                    "sd_group": "high",
+                    "rank": 2.4381443298969074
+                },
+                {
+                    "graph_index": 0,
+                    "realization_index": 25,
+                    "sd": 0.333906,
+                    "sd_group": "high",
+                    "rank": 1.943298969072165
+                },
+                {
+                    "graph_index": 0,
+                    "realization_index": 26,
+                    "sd": 0.360974,
+                    "sd_group": "high",
+                    "rank": 1.0721649484536082
+                },
+                {
+                    "graph_index": 0,
+                    "realization_index": 27,
+                    "sd": 0.404311,
+                    "sd_group": "high",
+                    "rank": 1.4948453608247423
+                },
+                {
+                    "graph_index": 0,
+                    "realization_index": 28,
+                    "sd": 0.430069,
+                    "sd_group": "high",
+                    "rank": 2.3247422680412373
+                },
+                {
+                    "graph_index": 0,
+                    "realization_index": 29,
+                    "sd": 0.362037,
+                    "sd_group": "high",
+                    "rank": 2.195876288659794
+                }
+            ],
+            "delay_realizations_per_topology": [
+                30
+            ],
+            "num_topologies": 1,
+            "num_delay_evaluations": 30,
+            "placement_information": "topology_and_independent_delay_prior",
+            "sd_score_mode": "mc",
+            "known_sd_level": null,
+            "search_config": {
+                "scenarios": 12,
+                "prior": "equal_lmh",
+                "mu": 1.0,
+                "uses_test_delay_or_metadata": false,
+                "uses_actual_test_sd": false,
+                "known_sd_level": null,
+                "conditional_intervals": null,
+                "sources": "all_nodes"
+            },
+            "search_pool_fingerprints": [
+                "ded9bb6e0ed8d0ba22c43076a56d5bc03e8f99125771c4ad458bdbfde6701621"
+            ],
+            "search_pool_fingerprints_by_sd_level": [
+                {}
+            ],
+            "placements_by_topology": [
+                [
+                    [
+                        18,
+                        22,
+                        25,
+                        51,
+                        65,
+                        66,
+                        80,
+                        88,
+                        89,
+                        95
+                    ]
+                ]
+            ],
+            "placements_by_sd_level": [
+                {}
+            ],
+            "conditional_total_deployment_time": [],
+            "conditional_total_evaluation_time": [],
+            "conditional_total_time": [],
+            "ave_conditional_total_deployment_time": null,
+            "ave_conditional_total_evaluation_time": null,
+            "ave_conditional_total_time": null,
+            "pmc_metrics_by_sd_level": {
+                "low": {
+                    "deployment_time": [],
+                    "evaluation_time": [],
+                    "time": [],
+                    "ave_deployment_time": null,
+                    "ave_evaluation_time": null,
+                    "ave_time": null
+                },
+                "medium": {
+                    "deployment_time": [],
+                    "evaluation_time": [],
+                    "time": [],
+                    "ave_deployment_time": null,
+                    "ave_evaluation_time": null,
+                    "ave_time": null
+                },
+                "high": {
+                    "deployment_time": [],
+                    "evaluation_time": [],
+                    "time": [],
+                    "ave_deployment_time": null,
+                    "ave_evaluation_time": null,
+                    "ave_time": null
+                }
+            },
+            "sd_groups": {
+                "low": {
+                    "range": "(0, 0.1]",
+                    "ave_rank": 0.8097938144329897,
+                    "rank": [
+                        0.7989690721649485,
+                        0.788659793814433,
+                        0.8556701030927835,
+                        0.8814432989690721,
+                        0.7628865979381443,
+                        0.8144329896907216,
+                        0.7577319587628866,
+                        0.8041237113402062,
+                        0.8505154639175257,
+                        0.7835051546391752
+                    ]
+                },
+                "medium": {
+                    "range": "(0.1, 0.3]",
+                    "ave_rank": 0.9829896907216493,
+                    "rank": [
+                        1.0463917525773196,
+                        0.7783505154639175,
+                        1.4123711340206186,
+                        0.8350515463917526,
+                        1.1082474226804124,
+                        0.8092783505154639,
+                        1.0515463917525774,
+                        0.7628865979381443,
+                        0.7989690721649485,
+                        1.2268041237113403
+                    ]
+                },
+                "high": {
+                    "range": "(0.3, 0.5]",
+                    "ave_rank": 1.928865979381443,
+                    "rank": [
+                        3.4123711340206184,
+                        1.2371134020618557,
+                        1.675257731958763,
+                        1.4948453608247423,
+                        2.4381443298969074,
+                        1.943298969072165,
+                        1.0721649484536082,
+                        1.4948453608247423,
+                        2.3247422680412373,
+                        2.195876288659794
+                    ]
+                },
+                "out_of_range": {
+                    "range": "outside (0, 0.5]",
+                    "ave_rank": null,
+                    "rank": []
+                }
+            },
+            "run_config": {
+                "model_method": "PPOAgent",
+                "inference_method": "SGBS",
+                "checkpoint": {
+                    "path": "model_save\\ppo_mix_v3_sd\\ppo_mix_v3_sd.pt",
+                    "exists": true,
+                    "size_bytes": 58812,
+                    "sha256": "cc32c0ab66bad06722f12e2dbce6319927525b3944c021bf730e3fe0c7fb9573"
+                },
+                "data": {
+                    "data_path": "data\\test_data",
+                    "graph_type": "WDN_Net3",
+                    "n_nodes": 97,
+                    "requested_topologies": 1,
+                    "loaded_topologies": 1,
+                    "no_sd": false,
+                    "topology_and_metadata_sha256": "6b85d49d30325b4661825ef3340f7da6cdd42669b8d8e9625f55d803427f31e5",
+                    "hop_alignment_checked_by_loader": true
+                },
+                "feature_set": "f3",
+                "sensor_budget": 10,
+                "beta": 4,
+                "gamma": 4,
+                "sd_score_mode": "mc",
+                "delay_prior": "equal_lmh",
+                "conditional_delay_priors": null,
+                "known_sd_level": null,
+                "delay_mu": 1.0,
+                "search_scenarios": 12,
+                "uses_final_test_delay_for_deployment": false,
+                "uses_actual_test_sd_for_deployment": false,
+                "uses_known_sd_level_for_deployment": false,
+                "average_rank": 1.240549828178694,
+                "average_deployment_seconds": 4.1795028,
+                "result_path": "result\\mc_sgbs\\ppo_mix_v3_sd_WDN_Net3_97_k10_mc_beta4_gamma4_M12.json"
+            },
+            "timing_semantics": {
+                "search_scenario_generation_time": "Independent search-pool generation only; already included in deployment_time.",
+                "search_scoring_time": "Completed-placement rank scoring only; a subset of search_time and deployment_time.",
+                "search_time": "Search logic excluding feature calculation and scenario generation; already included in deployment_time.",
+                "deployment_time": "Wall time from search-context construction through sensor selection; includes scenario generation, model loading, features, search, and search scoring.",
+                "pmc_conditional_total_deployment_time": "Benchmark-only sum of all requested low/medium/high pMC deployments. A real deployment with one known level uses only that level time.",
+                "evaluation_time": "Final localization evaluation after deployment; excluded from deployment_time.",
+                "time": "deployment_time + evaluation_time."
+            }
+        }
+    }
+}

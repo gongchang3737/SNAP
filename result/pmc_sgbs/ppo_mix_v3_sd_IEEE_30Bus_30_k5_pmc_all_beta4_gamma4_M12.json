@@ -1,0 +1,554 @@
+{
+    "PPOAgent": {
+        "SGBS": {
+            "ave_rank": 1.0594444444444444,
+            "ave_time": 0.8326770333333334,
+            "rank": [
+                1.0594444444444444
+            ],
+            "time": [
+                2.0918498000000003,
+                0.19588420000000006,
+                0.21029710000000001
+            ],
+            "model_load_time": [
+                1.8972881,
+                0.004162700000000186,
+                0.004329400000000483
+            ],
+            "feature_time": [
+                0.002468000000000359,
+                0.002300599999999875,
+                0.002058400000000127
+            ],
+            "search_time": [
+                0.17816219999999916,
+                0.17757220000000018,
+                0.19227039999999995
+            ],
+            "search_scenario_generation_time": [
+                0.00874150000000018,
+                0.0067821999999999605,
+                0.006669099999999872
+            ],
+            "search_scoring_time": [
+                0.028088699999999633,
+                0.030855900000000602,
+                0.03654460000000004
+            ],
+            "deployment_time": [
+                2.0874496000000002,
+                0.19168710000000022,
+                0.20606290000000005
+            ],
+            "placement_time": [
+                0.18063019999999952,
+                0.17987280000000005,
+                0.19432880000000008
+            ],
+            "evaluation_time": [
+                0.004400200000000076,
+                0.004197099999999843,
+                0.004234199999999966
+            ],
+            "ave_model_load_time": 0.6352600666666669,
+            "ave_feature_time": 0.002275666666666787,
+            "ave_search_time": 0.18266826666666644,
+            "ave_search_scenario_generation_time": 0.007397600000000004,
+            "ave_search_scoring_time": 0.03182973333333342,
+            "ave_deployment_time": 0.8283998666666669,
+            "ave_placement_time": 0.18494393333333323,
+            "ave_evaluation_time": 0.004277166666666628,
+            "rank_by_realization": [
+                [
+                    0.7833333333333333,
+                    0.75,
+                    0.7,
+                    0.7333333333333333,
+                    0.75,
+                    0.75,
+                    0.7833333333333333,
+                    0.7666666666666667,
+                    0.6833333333333333,
+                    0.7166666666666667,
+                    1.0666666666666667,
+                    1.3333333333333333,
+                    0.75,
+                    0.9166666666666666,
+                    0.7833333333333333,
+                    0.8,
+                    0.7666666666666667,
+                    0.7166666666666667,
+                    0.85,
+                    0.9833333333333333,
+                    1.65,
+                    1.35,
+                    1.5666666666666667,
+                    1.7666666666666666,
+                    1.35,
+                    1.1666666666666667,
+                    1.8166666666666667,
+                    0.9166666666666666,
+                    2.0833333333333335,
+                    1.7333333333333334
+                ]
+            ],
+            "realization_records": [
+                {
+                    "graph_index": 0,
+                    "realization_index": 0,
+                    "sd": 0.015763,
+                    "sd_group": "low",
+                    "rank": 0.7833333333333333
+                },
+                {
+                    "graph_index": 0,
+                    "realization_index": 1,
+                    "sd": 0.079333,
+                    "sd_group": "low",
+                    "rank": 0.75
+                },
+                {
+                    "graph_index": 0,
+                    "realization_index": 2,
+                    "sd": 0.061866,
+                    "sd_group": "low",
+                    "rank": 0.7
+                },
+                {
+                    "graph_index": 0,
+                    "realization_index": 3,
+                    "sd": 0.051354,
+                    "sd_group": "low",
+                    "rank": 0.7333333333333333
+                },
+                {
+                    "graph_index": 0,
+                    "realization_index": 4,
+                    "sd": 0.012015,
+                    "sd_group": "low",
+                    "rank": 0.75
+                },
+                {
+                    "graph_index": 0,
+                    "realization_index": 5,
+                    "sd": 0.000863,
+                    "sd_group": "low",
+                    "rank": 0.75
+                },
+                {
+                    "graph_index": 0,
+                    "realization_index": 6,
+                    "sd": 0.088039,
+                    "sd_group": "low",
+                    "rank": 0.7833333333333333
+                },
+                {
+                    "graph_index": 0,
+                    "realization_index": 7,
+                    "sd": 0.073946,
+                    "sd_group": "low",
+                    "rank": 0.7666666666666667
+                },
+                {
+                    "graph_index": 0,
+                    "realization_index": 8,
+                    "sd": 0.047289,
+                    "sd_group": "low",
+                    "rank": 0.6833333333333333
+                },
+                {
+                    "graph_index": 0,
+                    "realization_index": 9,
+                    "sd": 0.092128,
+                    "sd_group": "low",
+                    "rank": 0.7166666666666667
+                },
+                {
+                    "graph_index": 0,
+                    "realization_index": 10,
+                    "sd": 0.266131,
+                    "sd_group": "medium",
+                    "rank": 1.0666666666666667
+                },
+                {
+                    "graph_index": 0,
+                    "realization_index": 11,
+                    "sd": 0.295194,
+                    "sd_group": "medium",
+                    "rank": 1.3333333333333333
+                },
+                {
+                    "graph_index": 0,
+                    "realization_index": 12,
+                    "sd": 0.218697,
+                    "sd_group": "medium",
+                    "rank": 0.75
+                },
+                {
+                    "graph_index": 0,
+                    "realization_index": 13,
+                    "sd": 0.249826,
+                    "sd_group": "medium",
+                    "rank": 0.9166666666666666
+                },
+                {
+                    "graph_index": 0,
+                    "realization_index": 14,
+                    "sd": 0.260234,
+                    "sd_group": "medium",
+                    "rank": 0.7833333333333333
+                },
+                {
+                    "graph_index": 0,
+                    "realization_index": 15,
+                    "sd": 0.160833,
+                    "sd_group": "medium",
+                    "rank": 0.8
+                },
+                {
+                    "graph_index": 0,
+                    "realization_index": 16,
+                    "sd": 0.229538,
+                    "sd_group": "medium",
+                    "rank": 0.7666666666666667
+                },
+                {
+                    "graph_index": 0,
+                    "realization_index": 17,
+                    "sd": 0.107071,
+                    "sd_group": "medium",
+                    "rank": 0.7166666666666667
+                },
+                {
+                    "graph_index": 0,
+                    "realization_index": 18,
+                    "sd": 0.201547,
+                    "sd_group": "medium",
+                    "rank": 0.85
+                },
+                {
+                    "graph_index": 0,
+                    "realization_index": 19,
+                    "sd": 0.194693,
+                    "sd_group": "medium",
+                    "rank": 0.9833333333333333
+                },
+                {
+                    "graph_index": 0,
+                    "realization_index": 20,
+                    "sd": 0.497415,
+                    "sd_group": "high",
+                    "rank": 1.65
+                },
+                {
+                    "graph_index": 0,
+                    "realization_index": 21,
+                    "sd": 0.428753,
+                    "sd_group": "high",
+                    "rank": 1.35
+                },
+                {
+                    "graph_index": 0,
+                    "realization_index": 22,
+                    "sd": 0.380241,
+                    "sd_group": "high",
+                    "rank": 1.5666666666666667
+                },
+                {
+                    "graph_index": 0,
+                    "realization_index": 23,
+                    "sd": 0.40254,
+                    "sd_group": "high",
+                    "rank": 1.7666666666666666
+                },
+                {
+                    "graph_index": 0,
+                    "realization_index": 24,
+                    "sd": 0.377901,
+                    "sd_group": "high",
+                    "rank": 1.35
+                },
+                {
+                    "graph_index": 0,
+                    "realization_index": 25,
+                    "sd": 0.48309,
+                    "sd_group": "high",
+                    "rank": 1.1666666666666667
+                },
+                {
+                    "graph_index": 0,
+                    "realization_index": 26,
+                    "sd": 0.431877,
+                    "sd_group": "high",
+                    "rank": 1.8166666666666667
+                },
+                {
+                    "graph_index": 0,
+                    "realization_index": 27,
+                    "sd": 0.345097,
+                    "sd_group": "high",
+                    "rank": 0.9166666666666666
+                },
+                {
+                    "graph_index": 0,
+                    "realization_index": 28,
+                    "sd": 0.472651,
+                    "sd_group": "high",
+                    "rank": 2.0833333333333335
+                },
+                {
+                    "graph_index": 0,
+                    "realization_index": 29,
+                    "sd": 0.43652,
+                    "sd_group": "high",
+                    "rank": 1.7333333333333334
+                }
+            ],
+            "delay_realizations_per_topology": [
+                30
+            ],
+            "num_topologies": 1,
+            "num_delay_evaluations": 30,
+            "placement_information": "topology_and_known_sd_level_prior",
+            "sd_score_mode": "pmc",
+            "known_sd_level": "all",
+            "search_config": {
+                "scenarios": 12,
+                "prior": "conditional_by_known_sd_level",
+                "mu": 1.0,
+                "uses_test_delay_or_metadata": false,
+                "uses_actual_test_sd": false,
+                "known_sd_level": "all",
+                "conditional_intervals": {
+                    "low": "(0, 0.1]",
+                    "medium": "(0.1, 0.3]",
+                    "high": "(0.3, 0.5]"
+                },
+                "sources": "all_nodes"
+            },
+            "search_pool_fingerprints": [
+                "455ab57779114114d926a2ad7b195f0cef65b914a4919b0b7e64674a899fba72",
+                "03c3ecdf8aa7585729fd6826fcf87aaf5e992f9b02ffaa2819aade32d7b702ab",
+                "b07bb1cb881e70ec15791525885c3a4651930084de9fd4df7bb2b9e693a9ac8d"
+            ],
+            "search_pool_fingerprints_by_sd_level": [
+                {
+                    "low": "455ab57779114114d926a2ad7b195f0cef65b914a4919b0b7e64674a899fba72",
+                    "medium": "03c3ecdf8aa7585729fd6826fcf87aaf5e992f9b02ffaa2819aade32d7b702ab",
+                    "high": "b07bb1cb881e70ec15791525885c3a4651930084de9fd4df7bb2b9e693a9ac8d"
+                }
+            ],
+            "placements_by_topology": [
+                [
+                    [
+                        2,
+                        6,
+                        14,
+                        18,
+                        25
+                    ],
+                    [
+                        0,
+                        6,
+                        14,
+                        18,
+                        25
+                    ],
+                    [
+                        0,
+                        6,
+                        14,
+                        18,
+                        25
+                    ]
+                ]
+            ],
+            "placements_by_sd_level": [
+                {
+                    "low": [
+                        2,
+                        6,
+                        14,
+                        18,
+                        25
+                    ],
+                    "medium": [
+                        0,
+                        6,
+                        14,
+                        18,
+                        25
+                    ],
+                    "high": [
+                        0,
+                        6,
+                        14,
+                        18,
+                        25
+                    ]
+                }
+            ],
+            "conditional_total_deployment_time": [
+                2.4851996000000005
+            ],
+            "conditional_total_evaluation_time": [
+                0.012831499999999885
+            ],
+            "conditional_total_time": [
+                2.4980311000000004
+            ],
+            "ave_conditional_total_deployment_time": 2.4851996000000005,
+            "ave_conditional_total_evaluation_time": 0.012831499999999885,
+            "ave_conditional_total_time": 2.4980311000000004,
+            "pmc_metrics_by_sd_level": {
+                "low": {
+                    "deployment_time": [
+                        2.0874496000000002
+                    ],
+                    "evaluation_time": [
+                        0.004400200000000076
+                    ],
+                    "time": [
+                        2.0918498000000003
+                    ],
+                    "ave_deployment_time": 2.0874496000000002,
+                    "ave_evaluation_time": 0.004400200000000076,
+                    "ave_time": 2.0918498000000003
+                },
+                "medium": {
+                    "deployment_time": [
+                        0.19168710000000022
+                    ],
+                    "evaluation_time": [
+                        0.004197099999999843
+                    ],
+                    "time": [
+                        0.19588420000000006
+                    ],
+                    "ave_deployment_time": 0.19168710000000022,
+                    "ave_evaluation_time": 0.004197099999999843,
+                    "ave_time": 0.19588420000000006
+                },
+                "high": {
+                    "deployment_time": [
+                        0.20606290000000005
+                    ],
+                    "evaluation_time": [
+                        0.004234199999999966
+                    ],
+                    "time": [
+                        0.21029710000000001
+                    ],
+                    "ave_deployment_time": 0.20606290000000005,
+                    "ave_evaluation_time": 0.004234199999999966,
+                    "ave_time": 0.21029710000000001
+                }
+            },
+            "sd_groups": {
+                "low": {
+                    "range": "(0, 0.1]",
+                    "ave_rank": 0.7416666666666666,
+                    "rank": [
+                        0.7833333333333333,
+                        0.75,
+                        0.7,
+                        0.7333333333333333,
+                        0.75,
+                        0.75,
+                        0.7833333333333333,
+                        0.7666666666666667,
+                        0.6833333333333333,
+                        0.7166666666666667
+                    ]
+                },
+                "medium": {
+                    "range": "(0.1, 0.3]",
+                    "ave_rank": 0.8966666666666665,
+                    "rank": [
+                        1.0666666666666667,
+                        1.3333333333333333,
+                        0.75,
+                        0.9166666666666666,
+                        0.7833333333333333,
+                        0.8,
+                        0.7666666666666667,
+                        0.7166666666666667,
+                        0.85,
+                        0.9833333333333333
+                    ]
+                },
+                "high": {
+                    "range": "(0.3, 0.5]",
+                    "ave_rank": 1.5399999999999998,
+                    "rank": [
+                        1.65,
+                        1.35,
+                        1.5666666666666667,
+                        1.7666666666666666,
+                        1.35,
+                        1.1666666666666667,
+                        1.8166666666666667,
+                        0.9166666666666666,
+                        2.0833333333333335,
+                        1.7333333333333334
+                    ]
+                },
+                "out_of_range": {
+                    "range": "outside (0, 0.5]",
+                    "ave_rank": null,
+                    "rank": []
+                }
+            },
+            "run_config": {
+                "model_method": "PPOAgent",
+                "inference_method": "SGBS",
+                "checkpoint": {
+                    "path": "model_save\\ppo_mix_v3_sd\\ppo_mix_v3_sd.pt",
+                    "exists": true,
+                    "size_bytes": 58812,
+                    "sha256": "cc32c0ab66bad06722f12e2dbce6319927525b3944c021bf730e3fe0c7fb9573"
+                },
+                "data": {
+                    "data_path": "data\\test_data",
+                    "graph_type": "IEEE_30Bus",
+                    "n_nodes": 30,
+                    "requested_topologies": 1,
+                    "loaded_topologies": 1,
+                    "no_sd": false,
+                    "topology_and_metadata_sha256": "b22222117812d958cbdaa0e571c062deb601155bd4eea5fd72d1a20065bb1360",
+                    "hop_alignment_checked_by_loader": true
+                },
+                "feature_set": "f3",
+                "sensor_budget": 5,
+                "beta": 4,
+                "gamma": 4,
+                "sd_score_mode": "pmc",
+                "delay_prior": null,
+                "conditional_delay_priors": {
+                    "low": "(0, 0.1]",
+                    "medium": "(0.1, 0.3]",
+                    "high": "(0.3, 0.5]"
+                },
+                "known_sd_level": "all",
+                "delay_mu": 1.0,
+                "search_scenarios": 12,
+                "uses_final_test_delay_for_deployment": false,
+                "uses_actual_test_sd_for_deployment": false,
+                "uses_known_sd_level_for_deployment": true,
+                "average_rank": 1.0594444444444444,
+                "average_deployment_seconds": 0.8283998666666669,
+                "result_path": "result\\pmc_sgbs\\ppo_mix_v3_sd_IEEE_30Bus_30_k5_pmc_all_beta4_gamma4_M12.json"
+            },
+            "timing_semantics": {
+                "search_scenario_generation_time": "Independent search-pool generation only; already included in deployment_time.",
+                "search_scoring_time": "Completed-placement rank scoring only; a subset of search_time and deployment_time.",
+                "search_time": "Search logic excluding feature calculation and scenario generation; already included in deployment_time.",
+                "deployment_time": "Wall time from search-context construction through sensor selection; includes scenario generation, model loading, features, search, and search scoring.",
+                "pmc_conditional_total_deployment_time": "Benchmark-only sum of all requested low/medium/high pMC deployments. A real deployment with one known level uses only that level time.",
+                "evaluation_time": "Final localization evaluation after deployment; excluded from deployment_time.",
+                "time": "deployment_time + evaluation_time."
+            }
+        }
+    }
+}

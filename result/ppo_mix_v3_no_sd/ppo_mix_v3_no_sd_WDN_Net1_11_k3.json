@@ -1,0 +1,148 @@
+{
+    "PPOAgent": {
+        "one_shot": {
+            "ave_rank": 1.4090909090909092,
+            "ave_time": 4.025668,
+            "rank": [
+                1.4090909090909092
+            ],
+            "time": [
+                4.025668
+            ],
+            "model_load_time": [
+                3.9848464000000003
+            ],
+            "feature_time": [
+                0.003997699999999327
+            ],
+            "search_time": [
+                0.03630620000000029
+            ],
+            "placement_time": [
+                0.040303899999999615
+            ],
+            "evaluation_time": [
+                0.00044570000000021537
+            ],
+            "ave_model_load_time": 3.9848464000000003,
+            "ave_feature_time": 0.003997699999999327,
+            "ave_search_time": 0.03630620000000029,
+            "ave_placement_time": 0.040303899999999615,
+            "ave_evaluation_time": 0.00044570000000021537,
+            "rank_by_realization": [
+                [
+                    1.4090909090909092
+                ]
+            ],
+            "realization_records": [
+                {
+                    "graph_index": 0,
+                    "realization_index": null,
+                    "sd": null,
+                    "sd_group": null,
+                    "rank": 1.4090909090909092
+                }
+            ],
+            "delay_realizations_per_topology": [
+                1
+            ],
+            "num_topologies": 1,
+            "num_delay_evaluations": 1,
+            "placement_information": "topology_and_hop_only",
+            "sd_groups": {
+                "low": {
+                    "range": "(0, 0.1]",
+                    "ave_rank": null,
+                    "rank": []
+                },
+                "medium": {
+                    "range": "(0.1, 0.3]",
+                    "ave_rank": null,
+                    "rank": []
+                },
+                "high": {
+                    "range": "(0.3, 0.5]",
+                    "ave_rank": null,
+                    "rank": []
+                },
+                "out_of_range": {
+                    "range": "outside (0, 0.5]",
+                    "ave_rank": null,
+                    "rank": []
+                }
+            }
+        },
+        "SGBS": {
+            "ave_rank": 0.5909090909090909,
+            "ave_time": 0.1110174999999991,
+            "rank": [
+                0.5909090909090909
+            ],
+            "time": [
+                0.1110174999999991
+            ],
+            "model_load_time": [
+                0.0068254000000003145
+            ],
+            "feature_time": [
+                0.001035200000000458
+            ],
+            "search_time": [
+                0.10282909999999923
+            ],
+            "placement_time": [
+                0.10386429999999969
+            ],
+            "evaluation_time": [
+                0.00024159999999895376
+            ],
+            "ave_model_load_time": 0.0068254000000003145,
+            "ave_feature_time": 0.001035200000000458,
+            "ave_search_time": 0.10282909999999923,
+            "ave_placement_time": 0.10386429999999969,
+            "ave_evaluation_time": 0.00024159999999895376,
+            "rank_by_realization": [
+                [
+                    0.5909090909090909
+                ]
+            ],
+            "realization_records": [
+                {
+                    "graph_index": 0,
+                    "realization_index": null,
+                    "sd": null,
+                    "sd_group": null,
+                    "rank": 0.5909090909090909
+                }
+            ],
+            "delay_realizations_per_topology": [
+                1
+            ],
+            "num_topologies": 1,
+            "num_delay_evaluations": 1,
+            "placement_information": "topology_and_hop_only",
+            "sd_groups": {
+                "low": {
+                    "range": "(0, 0.1]",
+                    "ave_rank": null,
+                    "rank": []
+                },
+                "medium": {
+                    "range": "(0.1, 0.3]",
+                    "ave_rank": null,
+                    "rank": []
+                },
+                "high": {
+                    "range": "(0.3, 0.5]",
+                    "ave_rank": null,
+                    "rank": []
+                },
+                "out_of_range": {
+                    "range": "outside (0, 0.5]",
+                    "ave_rank": null,
+                    "rank": []
+                }
+            }
+        }
+    }
+}
