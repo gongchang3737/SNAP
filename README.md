@@ -417,13 +417,3 @@ SGBS和最终排名的统一索引，以及独立场景复现、随机流隔离�
 4. 大图 SGBS 的搜索参数与小图不同，运行时间比较必须同时标注 `beta`、`gamma`。
 5. 当前mc/pMC-SGBS复用原 `ppo_mix_v3_sd`，没有把模拟场景或sd加入PPO输入；它们只改变完整候选方案评分。
 
-## 18. 当前结果状态（2026-10-10）
-
-- 五种baseline的no-SD与SD结果已覆盖BA、WS、ER六种规模及七个重建后的真实网络；统一表位于 `result/baselines/baselines_summary.csv`。`baselines/` 中保留的GEO历史JSON不属于当前实验范围。
-- 新版hop/mc/pMC三方对照在BA、WS、ER的20/50/100节点上完整；pMC总体平均rank为2.7561，hop为2.8440，mc为2.7953。
-- 七个真实网络的hop/mc/pMC结果完整，但只有一张拓扑/网络，且当前三种模式都按 `(beta=4,gamma=4)` 运行。三者的宏平均rank分别为1.2692、1.2920、1.2879，不能据此声称条件先验在真实网络上稳定占优。
-- 200/300/500节点的hop、mc与pMC结果均已完整，正式三方对照分别位于 `result/hop_sgbs`、`result/mc_sgbs` 和 `result/pmc_sgbs`。
-- 节点索引回归、独立场景隔离和pMC功能测试为32/32通过；七个真实网络测试数据的7张拓扑和210个延迟实现也已通过只读一致性审计。
-
-完整数值、分档结果、时间口径和论文表述限制见 [result/result.md](result/result.md)；推理侧实现过程与待办见 [SD_SCENARIO_PROGRESS.md](SD_SCENARIO_PROGRESS.md)。
-
